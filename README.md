@@ -7,9 +7,13 @@ mTLS, and connects outbound only, so no inbound port has to be opened.
 
 This repository holds released agent builds and nothing else.
 
-**Installation and enrolment instructions live in the Wirewatch app:
-https://app.wirewatch.io** — the enrolment screen issues your token and shows the exact
-command for your platform. Container image: `ghcr.io/wirewatch/agent`.
+**Your enrolment token comes from the Wirewatch app: https://app.wirewatch.io** — the
+enrolment screen issues it and shows the exact command for your platform. Container
+image: `ghcr.io/wirewatch/agent`.
+
+**[Installing from the release binary](./install-binary.md)** — the route for hosts that
+cannot run containers, with a systemd unit that survives a reboot. Published here because
+it is the route you may need to read before you have an account open.
 
 ## Verify what you downloaded
 
