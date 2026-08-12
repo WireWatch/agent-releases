@@ -11,9 +11,21 @@ This repository holds released agent builds and nothing else.
 enrolment screen issues it and shows the exact command for your platform. Container
 image: `ghcr.io/wirewatch/agent`.
 
-**[Installing from the release binary](./install-binary.md)** — the route for hosts that
-cannot run containers, with a systemd unit that survives a reboot. Published here because
-it is the route you may need to read before you have an account open.
+The three install routes are published here, so you can read them before you have an
+account open and decide which one you want:
+
+**[Docker](./install-docker.md)** — one command, no unit file. The shortest route, and the
+right one for most hosts.
+
+**[Kubernetes](./install-kubernetes.md)** — for probing targets that only exist inside your
+cluster or on its network. Your token goes into a Secret rather than into process
+arguments.
+
+**[Release binary](./install-binary.md)** — the route for hosts that cannot run containers,
+with a systemd unit that survives a reboot.
+
+All three run identical bytes: the container image the first two use is the same digest,
+and it is built from the same release as the binary.
 
 ## Verify what you downloaded
 
